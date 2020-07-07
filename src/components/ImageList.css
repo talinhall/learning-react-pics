@@ -1,0 +1,14 @@
+.image-list{
+    display:grid;
+    /* this says auto decide how many columns to put witha min width of 250px
+    and maximun 1fr(whihc makes it so they are all the same size */
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    /* 0 pixals between each row and 10 px between each colum */
+    grid-gap: 0 10px;
+    /* syas how tall each cell is going to be. */
+    grid-auto-rows: 10px;
+}
+
+.image-list img {
+    width: 250px;
+}
